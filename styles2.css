@@ -1,0 +1,482 @@
+:root {
+    --shade: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Cormorant Garamond", Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5em;
+    background-color: #f4f4f4;
+    font-size: 24px;
+    text-align: center;
+    color: #333333;
+    width: 80%;
+    margin: 0% auto 5% auto;
+    overflow-x: hidden;
+}
+
+/*Links*/
+a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #333333;
+}
+
+a:visited {
+    color: #333333;
+}
+
+a:hover {
+    background-color: #7f9b7f;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*Navigation Bar*/
+nav {
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    
+}
+
+.nav-links {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 24px;
+    }
+
+.nav-links li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+.nav-links li a {
+    padding: 20px;
+}
+
+.nav-links li a:hover {
+    background-color: #7f9b7f;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 35px;
+    height: 2px;
+    margin: 8px;
+    background-color: #333333;
+}
+
+.page-content {
+    margin-top: 9%;
+}
+/*Header text*/
+.header {
+    color: #333333;
+    margin-bottom: 2%;
+    
+}
+
+div.header h1, div.header h2, h2.sections {
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: lighter;
+    padding: 10px;
+}
+
+div.header h1 {
+    margin-bottom: 20px;
+    padding-top: 10px;
+    font-size: 60px;
+}
+
+/* Main images */
+
+img.main-images {
+    max-width: 75%;
+    height: auto;
+    margin-top: 10px;
+    background-attachment: fixed;
+    box-shadow: var(--shade);
+}
+
+h2.sections {
+    padding: 50px 10px 50px 10px;
+    letter-spacing: 0.2em;
+    word-spacing: 0.2em;
+    margin: 5% 20px 20px 20px;
+
+}
+
+h2#date {
+    padding-top: 20px;
+}
+
+div.description h2 {
+    margin: 20px 20px;
+}
+
+div.description h3 {
+    font-weight: bold; 
+    float: left;
+    font-size: 40px;
+    width: 40%;
+}
+
+div.description p {
+    width: 75%;
+    margin: 0px auto 0px auto;
+    text-align: justify;
+}
+
+div.description p a {
+    font-weight: bold;
+}
+
+/*Wedding party*/
+h3.title {
+    text-align: center;
+    font-weight: lighter;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin: 50px auto 10px auto;
+    border-bottom: .5px solid #333333;
+    width: 300px;
+}
+
+.party-guest {
+    display: inline-block;
+    margin: 25px;
+    letter-spacing: 2px;
+}
+
+.partyimage {
+    border-radius: 50%;
+    box-shadow: var(--shade);
+    width: 250px;
+}
+
+/* Hotels */
+.hotel-box {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px 25px;
+}
+
+.logo {
+    width: 350px;
+}
+
+.number {
+    margin: 5px 0px 40px 0px;
+}
+
+.hotel-box a:hover {
+    background-color: #f4f4f4;
+}
+
+p.note {
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+p.price {
+    margin: 10px;
+    font-weight: bold;
+}
+
+/*Schedule*/
+.schedule h3 {
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 40px 0px 20px 0px;
+}
+
+.schedule p {
+    font-size: 28px;
+    letter-spacing: 3px;
+    margin: 5px;
+}
+
+.details {
+    border: .5px solid #333333;
+    width: 5%;
+    margin: 10px auto;
+}
+
+.event {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #333333;
+    border-top: 1px solid #333333;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.icons {
+    height: 150px;
+}
+
+p.place {
+    justify-content: flex-start;
+    flex-basis: 1;
+}
+
+p.time {
+    justify-content: flex-end;
+    flex-basis: 1;
+    font-weight: bold;
+}
+
+
+/* Things to do! */
+h2#thingstodo {
+    clear: left;
+}
+
+.things-image {
+    float: left;
+    width: 350px;
+    box-shadow: var(--shade);
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.content {
+    float: left;
+}
+
+.content a {
+    font-weight: bold;
+}
+
+h3.things-text {
+    font-size: 30px;
+    font-weight: lighter;
+    border-bottom: .5px solid #333333;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+p.things-text {
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 400px;
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+/*footer*/
+.foot {
+    margin-top: 50px;
+}
+
+p#copyright {
+    font-size: 18px;
+    margin-top: 100px;
+}
+
+@media (max-width: 1420px) {
+    .nav-links li {
+        font-size: 16px;
+    }
+
+    .partyimage {
+        width: 200px;
+    }
+}
+
+@media (max-width: 1073px) {
+    body {
+        font-size: 20px;
+    }
+    .nav-links {
+        font-size: 24px;
+        }
+    div.header h1 {
+        font-size: 40px;
+    }
+    div.description h3 {
+        font-size: 30px;
+    }
+    td div.name {
+        font-size: 24px;
+    }
+    table.thing p {
+        font-size: 14px;
+    }
+    p#coypright {
+        font-size: 16px;
+    }
+  }
+
+@media (max-width: 978px) {
+    .things-image {
+        float: none;
+    }
+    .content {
+        width: 100%;
+    }
+    p.things-text {
+        margin-left: 50px;
+    }
+}
+
+/*burger navigation style kicks in*/
+@media (max-width: 1172px) {
+    body {
+        overflow-x: hidden;
+        width: 95%;
+    }
+
+    nav {
+        background-color: #7f9b7f;
+    }
+
+    .nav-links {
+        position: absolute; 
+        background-color: #7f9b7f;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        padding: 0px;
+    }
+
+    .nav-links li {
+        font-size: 20px;
+        line-height: 1em;
+        padding: 10%;
+    }
+
+    .nav-links li a {
+        color: #ffffff;
+        padding: 0px;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+        background-color: #f4f4f4;
+    }
+
+    .header h1 {
+        margin-top: 5%;
+    }
+
+    .things-image {
+        width: 250px;
+    }
+
+    .logo {
+        width: 250px;
+    }
+}
+/* schedule's display converts to flex-column */
+@media (max-width: 923px) {
+    .event {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        align-self: center;
+        width: 80%;
+        margin: 25px auto;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    
+    p.place {
+        justify-content: flex-start;
+        flex-basis: 1;
+        margin: 20px 0px;
+    }
+    
+    p.time {
+        justify-content: flex-end;
+        flex-basis: 1;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }
+    
+}
+
+@media (max-width: 799px) {
+    .partyimage {
+        width: 150px;
+    }
+}
+
+@media (max-width: 646px) {
+    .party-guest {
+        display: block;
+    }
+
+    .partyimage {
+        width: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    div.header h1 {
+        font-size: 30px;
+    }
+
+    div.header h2 {
+        font-size: 20px;
+    }
+
+    p {
+        line-height: 1.2em;
+    }
+
+    .schedule h3 {
+        font-size: 20px;
+    }
+
+    .schedule p {
+        font-size: 20px;
+    }
+
+    .icons {
+        height: 100px;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+}
