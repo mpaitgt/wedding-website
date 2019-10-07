@@ -15,4 +15,13 @@ const navSlide = () => {
 
 }
 
-navSlide();
+window.onload = function() {
+    navSlide();
+    document.body.classList.add('fade');
+}
+
+
+
+    
+
+
