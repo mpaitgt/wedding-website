@@ -187,12 +187,8 @@ h3.title {
 
 /* Hotels */
 .hotel-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    vertical-align: middle;
-    margin: 10px 25px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
 }
 
 .logo {
@@ -210,6 +206,17 @@ h3.title {
     background-color: #f4f4f4;
 }
 
+.hotel-link {
+    grid-column: 1 / 2;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hotel-details {
+    grid-column: 2/5;
+}
+
 p.note {
     font-size: 12px;
     font-weight: bold;
@@ -219,6 +226,7 @@ p.note {
 p.price {
     font-weight: bold;
 }
+
 
 /*Schedule*/
 .schedule h3 {
