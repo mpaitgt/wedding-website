@@ -189,8 +189,8 @@ h3.title {
 .hotel-box {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .logo {
@@ -201,7 +201,7 @@ h3.title {
 .logo:hover {
     transform: scale(1.2);
     transition: 0.25s ease-in-out;
-    
+  
 }
 
 .hotel-box a:hover {
@@ -213,16 +213,23 @@ h3.title {
     width: 100%;
     margin: 0 auto;
     text-align: center;
+    width: 40%;
+    margin: 0 auto;
 }
 
 .hotel-details {
     grid-column: 2/5;
+    width: 60%;
+    margin: 0 auto;
 }
 
 p.note {
     font-size: 12px;
     font-weight: bold;
     font-style: italic;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
 }
 
 p.price {
