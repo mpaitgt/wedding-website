@@ -1,14 +1,16 @@
 var cutoffDate = document.getElementsByClassName('cutoff-date');
 var daysFromNow = document.getElementsByClassName('days-from-now');
 
-var momentCutoff = moment('2020-04-21').format('MMMM Qo');
-var fromNow = moment([2020, 04, 21]).fromNow();
+var momentOne = moment('2020-04-21');
+var momentCutoff = momentOne.format('MMMM Do');
+var fromNow = momentOne.toNow(true);
 
 var hiltonCutoffDate = document.getElementById('hilton-cutoff-date');
 var hiltonDaysFromNow = document.getElementById('hilton-days-from-now');
 
-var hiltonMomentCutoff = moment('2020-05-15').format('MMMM Qo');
-var hiltonFromNow = moment([2020, 05, 15]).fromNow();
+var momentTwo = moment('2020-05-15');
+var hiltonMomentCutoff = momentTwo.format('MMMM Do');
+var hiltonFromNow = momentTwo.toNow(true);
 
 for (var i = 0; i < cutoffDate.length; i++) {
     cutoffDate[i].innerHTML = momentCutoff;
