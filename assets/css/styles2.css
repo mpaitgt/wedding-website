@@ -236,6 +236,11 @@ p.price {
     font-weight: bold;
 }
 
+.moment-notice {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
 
 /*Schedule*/
 .schedule h3 {
