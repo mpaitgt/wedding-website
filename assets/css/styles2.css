@@ -210,8 +210,6 @@ h3.title {
 
 .hotel-link {
     grid-column: 1 / 2;
-    width: 100%;
-    margin: 0 auto;
     text-align: center;
     width: 40%;
     margin: 0 auto;
@@ -389,6 +387,37 @@ p#copyright {
         align-items: center;
         vertical-align: middle;
         margin: 10px 25px;
+    }
+
+    .hotel-link {
+        width: 100%;
+        margin: 20px auto;
+        text-align: center;
+    }
+    
+    .hotel-details {
+        width: 60%;
+        margin: 10px auto;
+    }
+    
+    p.note {
+        font-size: 12px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        margin: 10px auto;
+        width: 100%;
+    }
+    
+    p.price {
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    
+    .moment-notice {
+        font-size: 16px;
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
 }
 
