@@ -34,40 +34,32 @@
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
-</nav>
+    </nav>
 
     <!--Schedule with addresses, times, etc.-->
-    <h2 id="schedule" class="sections">Schedule</h2>
+    <h2 id="rsvp" class="sections">RSVP</h2>
 
-    <div class="schedule">
-
-        <h3>Friday, June 5th</h3>
-        <div class="details"></div>
-        
-        <div class="event">
-            <img class="icons" src="../assets/images/schedule-photos/drinks.png">
-                <p class="place">Welcome to Burlington <br> @ TBD</p>
-                <p class="time">TBD</p>
+    <form id="rsvp-form">
+  
+        <div>
+          <label>Full name</label>
+          <input type="text" class="input-field" name="full_name" placeholder="Full name"/>
         </div>
-        <hr>
-        <h3>Saturday, June 6th</h3>
-        <div class="details"></div>
-
-        <div class="event">
-            <img class="icons" src="../assets/images/schedule-photos/wedding2.png">
-                <p class="place">Ceremony & Reception <br> @ The Intervale</p>
-                <p class="time">TBD</p>
+      
+        <div class="dropdown">
+          <label>Will you be there?</label>
+          <select name="rsvp_response" class="input-field">
+            <option value="yes">We'll be there!</option>
+            <option value="no">We can't make it :(</option>
+          </select> 
         </div>
-        <hr>
-        <div class="event">
-            <img class="icons" src="../assets/images/schedule-photos/after-party2.png">
-                <p class="place">After Party <br> @ TBD</p>
-                <p class="time">TBD</p>
-        </div>
-        <hr>
-    </div>
 
-</div>
+        <div>
+          <button type="submit" id="submit-form">Submit</button>
+        </div>
+      
+      </form>
+
 
 <script src="https://momentjs.com/downloads/moment.min.js"></script>
 <script src="../assets/js/moment-file.js"></script>
