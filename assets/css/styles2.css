@@ -334,14 +334,14 @@ p.things-text {
 
 .input-field {
     display: block;
-    padding: 16px;
-    margin: 20px auto;
+    padding: 10px;
+    margin: 10px auto 22px auto;
     width: 300px;
     font-size: 24px;
     font-family: "Cormorant Garamond", Georgia, 'Times New Roman', Times, serif;
 }
 
-#submit-form {
+#submit-form-btn {
     font-family: inherit;
     font-size: 16px;
     margin: 2em;
@@ -350,21 +350,18 @@ p.things-text {
     border: none;
 }
 
-#submit-form:hover {
+#submit-form-btn:hover {
     transform: scale(1.1);
     background-color: #7f9b7f;
     color: #ffffff;
     transition: all 0.5s ease-out;
 }
 
-.dropdown {
-    position: relative;
+#thankyou_message {
+    margin: 20px;
+    font-size: 26px;
+    line-height: 1.5em;
 }
-
-.dropdown select {
-    display: none;
-}
-
 
 
 /*footer*/

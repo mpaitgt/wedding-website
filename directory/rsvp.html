@@ -3,7 +3,7 @@
 
 <head>
     <title>Shannon & Matt's Wedding</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
 
     <!--CSS-->
     <link href="../assets/css/styles2.css" rel="stylesheet">
@@ -39,31 +39,42 @@
     <!--Schedule with addresses, times, etc.-->
     <h2 id="rsvp" class="sections">RSVP</h2>
 
-    <form id="rsvp-form">
+    <div id="thankyou_message" style="display:none;">
+        <h2>Thanks for responding <br>
+            Hopefully we'll see you on June 6th!</h2>
+      </div>
+
+    <form class="gform" id="rsvp-form" action="https://script.google.com/macros/s/AKfycbzYFY3aYBpfirgqQNofAuOUumnpPFQ3KtaJLrxdXg/exec" method="POST" data-email="mattpigs@gmail.com">
   
         <div>
-          <label>Full name</label>
-          <input type="text" class="input-field" name="full_name" placeholder="Full name"/>
+            <label>Names of guest(s)</label>
+            <input type="text" id="names" class="input-field" name="names" placeholder="Full name" required/>
         </div>
       
-        <div class="dropdown">
-          <label>Will you be there?</label>
-          <select name="rsvp_response" class="input-field">
-            <option value="yes">We'll be there!</option>
-            <option value="no">We can't make it :(</option>
-          </select> 
+        <div>
+            <label>Attending? (yes/no)</label>
+            <input type="text" id="attending" class="input-field" name="attending" placeholder="We'll be there!" required/>
         </div>
 
         <div>
-          <button type="submit" id="submit-form">Submit</button>
+            <label>Your email</label>
+            <input type="text" id="email" class="input-field" name="email" placeholder="example@gmail.com"/>
+        </div>
+
+        <div>
+            <label>Song to get moving</label>
+            <input type="text" id="song" class="input-field" name="song" placeholder="Nobody by Mitski"/>
+        </div>
+
+        <div>
+          <button type="submit" id="submit-form-btn">Submit</button>
         </div>
       
       </form>
 
-
-<script src="https://momentjs.com/downloads/moment.min.js"></script>
-<script src="../assets/js/moment-file.js"></script>
-<script src="../assets/js/nav-script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="../assets/js/nav-script.js" type="text/javascript"></script>
+<script src="../assets/js/form.js" type="text/javascript"></script>
 
 </body>
 
