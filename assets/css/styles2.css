@@ -48,7 +48,7 @@ a:hover {
 
 /*Navigation Bar*/
 nav {
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     position: fixed;
     top: 0;
     width: 100%;
@@ -84,11 +84,14 @@ nav {
     display: none;
 }
 
+
 .burger div {
     width: 35px;
-    height: 2px;
-    margin: 8px;
-    background-color: #333333;
+    height: 4px;
+    margin: 9px auto;
+    border-radius: 5px;
+    background-color: #ffffff;
+    
 }
 
 .page-content {
@@ -517,10 +520,6 @@ p#copyright {
         width: 95%;
     }
 
-    nav {
-        background-color: #7f9b7f;
-    }
-
     .nav-links {
         position: absolute; 
         background-color: #7f9b7f;
@@ -550,7 +549,20 @@ p#copyright {
         display: block;
         cursor: pointer;
         padding: 10px;
-        background-color: #f4f4f4;
+        background-color: #7f9b7f;
+        width: 70px;
+        height: 70px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: var(--shade);
+    }
+
+    .burger:active {
+        box-shadow: none;
+    }
+
+    .line {
+        background-color: #ffffff;
     }
 
     .header h1 {
