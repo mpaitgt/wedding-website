@@ -85,11 +85,7 @@
         return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
     }).join('&');
     xhr.send(encoded);
-
-    document.getElementById('names').value = '';
-    document.getElementById('attending').value = '';
-    document.getElementById('email').value = '';
-    document.getElementById('song').value = '';
+    loadFunction();
   }
   
   function loaded() {
@@ -106,5 +102,15 @@
     for (var i = 0; i < buttons.length; i++) {
       buttons[i].disabled = true;
     }
+  }
+
+  function loadFunction() {
+    var rsvp = document.getElementById('rsvp-form');
+    rsvp.classList.add('fade-out');
+    setTimeout(function() { rsvp.style.display = 'none'; }, 1500);
+    document.getElementById('names').value = '';
+    document.getElementById('attending').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('song').value = '';
   }
 })();
