@@ -333,6 +333,7 @@ p.things-text {
 
 /* RSVP */
 #rsvp-form {
+    display: block;
     background-color: #ffffff;
     padding: 2em;
     max-width: 400px;
@@ -365,6 +366,7 @@ p.things-text {
 }
 
 #thankyou_message {
+    opacity: 0;
     margin: 20px;
     font-size: 26px;
     line-height: 1.5em;
@@ -374,12 +376,30 @@ p.things-text {
     animation-name: fadeout;
     animation-duration: 1s;
     animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .fade-in {
-    animation-name: fadeout;
+    animation-name: fadein;
     animation-duration: 1s;
     animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#loader {
+    border: 16px solid #ffffff; /* Light grey */
+    border-top: 16px solid #7f9b7f; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    display: none;
+    margin: 0 auto;
+  }
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 @keyframes fadeout {

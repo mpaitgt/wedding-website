@@ -3,6 +3,7 @@
   function getFormData(form) {
     var elements = form.elements;
     var honeypot;
+    var loader = document.getElementById('loader');
 
     var fields = Object.keys(elements).filter(function(k) {
       if (elements[k].name === "honeypot") {
@@ -76,7 +77,12 @@
           }
           var thankYouMessage = document.querySelector("#thankyou_message");
           if (thankYouMessage) {
-            thankYouMessage.style.display = "block";
+            setTimeout(function() {
+              thankYouMessage.style.display = "block";
+              thankYouMessage.classList.add('fade-in');
+              loader.style.display = 'none';
+            }, 1000)
+            
           }
         }
     };
@@ -106,11 +112,10 @@
 
   function loadFunction() {
     var rsvp = document.getElementById('rsvp-form');
+    
+    // var thankyou = document.getElementById('thankyou_message');
     rsvp.classList.add('fade-out');
-    setTimeout(function() { rsvp.style.display = 'none'; }, 1500);
-    document.getElementById('names').value = '';
-    document.getElementById('attending').value = '';
-    document.getElementById('email').value = '';
-    document.getElementById('song').value = '';
+    loader.style.display = 'block';
+    setTimeout(function() { rsvp.style.display = 'none'; }, 1000);
   }
 })();
