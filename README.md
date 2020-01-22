@@ -1,8 +1,6 @@
 # Wedding Website
 
-### I created this website for our guests so that they can easily book hotels in our available blocks, check out the wedding party, find things to do in the city, and RSVP.
-
-[www.mattandshannon.net](www.mattandshannon.net)
+### I created this website for our guests so that they can easily book hotels in our available blocks, check out the wedding party, find things to do in the city, and RSVP. You can check it out at [www.mattandshannon.net](www.mattandshannon.net).
 
 ### This website was hard-coded with plain HTML and CSS, and later implemented Javascript for form submission and Moment.js.
 
